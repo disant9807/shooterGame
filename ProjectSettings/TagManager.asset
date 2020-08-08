@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Damage
+  - player
+  - Food
+  - Enemy
+  - Exit
+  - Soda
+  - Mobs
+  - Furniture
+  - Wallet
+  - weapon
+  - Floor
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - obstruction
+  - Mobs
+  - Bullet
+  - Furniture
+  - IgnoreMobs
+  - NonePlayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1255956797
+    locked: 0
+  - name: Foreground
+    uniqueID: 645703559
+    locked: 0
+  - name: Player
+    uniqueID: 4011434151
+    locked: 0
