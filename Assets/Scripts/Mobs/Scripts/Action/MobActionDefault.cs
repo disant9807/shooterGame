@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MobActionDefault : MonoBehaviour
 {
-    private IMonsterBehavior monsterBehavior; 
+    private IMob monsterBehavior; 
     private Transform target; // Выбранная цель
     private bool targetSelected; // Если цель выбранна
     private bool beingAttacked; // Атакуют ли меня ?
@@ -13,7 +13,7 @@ public class MobActionDefault : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        monsterBehavior = GetComponent<IMonsterBehavior>();
+        monsterBehavior = GetComponent<IMob>();
         targetSelected = false;
         beingAttacked = false;
         selectLayer = false;

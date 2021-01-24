@@ -43,8 +43,8 @@ public class VisibleTypical : MonoBehaviour, IVisible
     private void Update()
     {
         //Debug.Log("Рисование сектора");
-        RenderLine.DrawSector(angle, distance/scaleRadius, 0.1f, _thisLine);
-        RenderLine.DrawSector(angle, distance - (distance * 0.08f), 0.1f, _thisLine);
+        //RenderLine.DrawSector(angle, distance/scaleRadius, 0.1f, _thisLine);
+        //RenderLine.DrawSector(angle, distance - (distance * 0.08f), 0.1f, _thisLine);
     }
 
     public bool IsVisible()

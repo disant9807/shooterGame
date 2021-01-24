@@ -3,7 +3,7 @@ using System.Collections;
 using Pathfinding;
 using UnityEngine;
 
-public class BehaviorDefault : MonoBehaviour, IMonsterBehavior
+public class BehaviorDefault : MonoBehaviour, IMob
 {
     [SerializeField] public float hp; //Жизненные силы
     [SerializeField] public float damage; //Урон наносимый мобом
@@ -43,13 +43,13 @@ public class BehaviorDefault : MonoBehaviour, IMonsterBehavior
     private IPlayer player;
     void Start()
     {
-        attack = true;
+        //attack = true;
         
-        transformCache = gameObject.transform;
-        lineRenderer = GetComponent<LineRenderer>();
-        rigidbody2DCache = GetComponent<Rigidbody2D>();
-        seeker = GetComponent<Seeker>();
-        id = GlobalID.GetID();
+        //transformCache = gameObject.transform;
+        //lineRenderer = GetComponent<LineRenderer>();
+        //rigidbody2DCache = GetComponent<Rigidbody2D>();
+        //seeker = GetComponent<Seeker>();
+        //id = GlobalID.GetID();
         
         //Надо будет сделать статичным
         motorNow = new MotorNow(transformCache, rigidbody2DCache, speed, speedRotate, target.transform, seeker);

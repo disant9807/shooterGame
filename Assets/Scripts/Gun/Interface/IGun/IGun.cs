@@ -1,6 +1,3 @@
-
-using System;
-
 public interface IGun
 {
     bool SetAmmo(int ammo, int magazine);

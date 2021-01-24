@@ -105,7 +105,7 @@ public class GrenageBullet : MonoBehaviour, IBullet
                 Vector3 thisVector = transform.position;
                 var forward = vectorFurniture -  thisVector;
                 float distance = Vector2.Distance(vectorFurniture, thisVector);
-                IMonsterBehavior mobComponent = mob.GetComponent<IMonsterBehavior>();
+                IMob mobComponent = mob.GetComponent<IMob>();
                 mobComponent.SetFreeze(1.5f);
                 mobComponent.NoCollision(1.5f);
                 mobComponent.SetDamage(damage);
@@ -149,11 +149,11 @@ public class GrenageBullet : MonoBehaviour, IBullet
 
         if (other.gameObject.CompareTag(tagsMobs))
         {
-            int idmobs = other.gameObject.GetComponent<IMonsterBehavior>().GetID();
+            int idmobs = other.gameObject.GetComponent<IMob>().GetID();
             int findIndex = mobs.Select((item, index) => new {Item = item, Index = index})
                 .First(i =>
                 {
-                    IMonsterBehavior mobs = i.Item.GetComponent<IMonsterBehavior>();
+                    IMob mobs = i.Item.GetComponent<IMob>();
                     if (mobs != null)
                     {
                         return mobs.GetID() == idmobs;

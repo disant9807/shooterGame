@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class scenes : MonoBehaviour
 {
-    public dialog dialog;
+    //public dialog dialog;
     public string tagPlayer;
     private Rigidbody2D rigidbody2D;
     public float strong;
@@ -18,10 +18,10 @@ public class scenes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialog.GeIsCaneled())
-        {
-            rigidbody2D.velocity = transform.right * (strong * Time.deltaTime);
-        }
+       //if (dialog.GeIsCaneled())
+       // {
+       //     rigidbody2D.velocity = transform.right * (strong * Time.deltaTime);
+       // }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

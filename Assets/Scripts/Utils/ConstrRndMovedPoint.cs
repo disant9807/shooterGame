@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Assets.Core.Common;
 
 [ExecuteAlways]
 public class ConstrRndMovedPoint : MonoBehaviour
@@ -70,7 +71,7 @@ public class ConstrRndMovedPoint : MonoBehaviour
             }
             
             
-            RenderLine.DrawLinePoints(thisVectorPoints, 0.15f, _lineRender, true);
+            RenderLineHelper.DrawLinePoints(thisVectorPoints, 0.15f, _lineRender, true);
         }
     }
 }

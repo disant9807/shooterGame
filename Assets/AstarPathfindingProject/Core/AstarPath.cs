@@ -1202,7 +1202,7 @@ public class AstarPath : VersionedMonoBehaviour {
 
 			return 1;
 		} else {
-			return (int)count > 0 ? 1 : 0;
+			return (int)count;
 		}
 #endif
 	}

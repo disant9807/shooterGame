@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour, IBullet
         GameObject objTrigger = other.gameObject;
         if (objTrigger.CompareTag(tagMobs))
         {
-            IMonsterBehavior mobs = objTrigger.GetComponent<IMonsterBehavior>();
+            IMob mobs = objTrigger.GetComponent<IMob>();
             mobs.SetDamage(damage);
             mobs.Jerk(_velocity, powerGarbage);
             mobs.SetFreeze(0.5f);

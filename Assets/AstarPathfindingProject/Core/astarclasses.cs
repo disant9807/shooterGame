@@ -1049,13 +1049,13 @@ namespace Pathfinding {
 		AutomaticHighLoad = -2,
 		None = 0,
 		One = 1,
-		Two,
-		Three,
-		Four,
-		Five,
-		Six,
-		Seven,
-		Eight
+		Two = 2,
+		Three = 3,
+		Four = 4,
+		Five = 5,
+		Six = 6,
+		Seven = 7,
+		Eight = 8
 	}
 
 	/// <summary>Internal state of a path in the pipeline</summary>

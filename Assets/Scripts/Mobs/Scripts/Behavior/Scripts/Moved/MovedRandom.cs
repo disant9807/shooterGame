@@ -54,9 +54,12 @@ public class MovedRandom : MonoBehaviour, IMovedBehavior
       this.distanceFollow = distanceFollow;
    }
    
+   /// <summary>
+   /// 
+   /// </summary>
    public void Moved()
    {
-      if (ExistInBorder())
+      if (false)
       {
          if (pointFollow != null && Vector2.Distance(_unit.position, pointFollow.position) > distanceFollow)
          {
